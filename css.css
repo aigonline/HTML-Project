@@ -1,0 +1,62 @@
+body {
+       Background: khaki;
+     } 
+input, select, #btn1{
+     width:100% ;
+     padding: 12px 20px;
+     margin: 8px 0px;
+     box-sizing: border-box;
+     color: black;
+}
+#hp{text-align: center;}
+.cart-item input{width: 81%;}
+h1 {
+     color: black;
+     margin: 40px auto 40px auto;
+     text-align: center;
+     font-size: 60px; 
+     border: 5px solid black; 
+    }
+ li, a{  
+          display: inline;
+          display: block;
+          color: white; 
+          border: 1400px rgb(29, 158, 57);
+          display: inline;
+          overflow: hidden;
+          padding: 10px;
+          text-decoration: none;
+     }
+ul   {
+     background-color: black;
+     display: block;
+     padding: 10px;
+     }
+#message {
+         height: 100px; 
+         }
+#go{
+     background-color: black;
+}
+
+ #p2{text-align:justify;}
+ #a2:visited {color:black;}
+ #a2:hover{color:orange;}
+ #a2:active{color:orange;}
+
+    p{
+        color: black;
+        margin: 40px auto 40px auto;
+        text-align: left;
+        font-size: 20px;
+        font-style: oblique;
+         }
+   a:link { color: green;
+          }
+   a:visited{ color: white;
+            }
+   a:hover { color: orange;
+           }
+   
+   a:active{ color: orangered;
+            }

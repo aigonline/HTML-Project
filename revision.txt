@@ -1,0 +1,76 @@
+Q1
+the structure of an HTML document is divided into two parts;
+The head; 
+This is composed of the information about the HTML document  
+The Body; This contains everything you want to display on the
+webpage 
+
+Q2
+Block elements have top and bottom margins, they consume their entire width irrespective of their 
+sufficiency and they always start in a new line. Inline elements only cover the space as bounded 
+by the tags in the HTML element, they do not start in a new line and don't have top and buttom margins.
+E.g of block elements; div, h1-h6, p, ol, hr tags,etc
+E.g of inline elements; a, br, img, span, etc
+
+Q3 a. p { font-size: 12px;}
+   b. .poetry { font-style: italic;}
+   c. #stanza2 { font-weight: bold;}
+
+Q4 i- Inline CSS: by using style attributes inside HTML elements
+      E.g <h1 style="color:blue;">A blue heading</h1>
+   ii- Internal CSS: by using a <style> element in the <head> section
+       E.g <head>
+           <style>
+           body { background-color: linen;}
+           </head>
+           </style>
+   iii- External CSS: by using a <link> element to link an HTML document to '
+        separate CSS file. 
+        E.g <link rel = "stylesheet" href = "external.css">
+
+Q5 <table border ="1" cellspacing = "1" width = "50%" height = "50%">
+   <tr>
+      <th>Aa</th>
+      <th>Ba</th>
+      <th>Cc</th>
+      <th>Dd</th>
+   </tr>
+   <tr height = "300">
+      <td>Ee</td>
+      <td width = "80%" text-align = "center">
+      <figure>
+      <img src = "flowers.jpg" alt = "roses" align = "center" height = "50px" width = "80px"/>
+      <figcaption>Nice Flowers</figcaption>
+      </figure>
+      </td>
+   </tr>
+   <tr>
+      <td colspan = "2">Ff</td>
+      <td>Gg</td>
+   </tr>
+<tr>
+      <td rowspan = "2">
+      <a href ="drinks.html">Drinks</a>
+      <ol type = "1">
+            <li>coffee</li>
+            <ul type = "disk">
+            <li>Esppresso</li>
+            <li>Cappucino</li>
+            </ul>
+            </li>
+            <li>Tea</li>
+            <li>water<li>
+      </dl>
+      </td>
+      <td>jj</td>
+      <td colspan = "2">kk</td>
+      <td></td>
+ </tr>
+ <tr>
+      <td>Aa</td>
+      <td>Ba</td>
+      <td>Cc</td>
+      <td>Dd</td>
+ </tr>
+   </table>
+

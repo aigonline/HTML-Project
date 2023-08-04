@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel= "stylesheet" href="css.css">
+    
+<title>
+Contact Us
+</title>
+
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <hr>
+    <ul id="ul">
+        <li><a href ="index.html" class="active">Home</a></li>
+        <li><a href ="aboutus.html"  class="active">About Us</a></li>
+        <li><a href ="contactus.html"  class="active">Contact Us</a></li>
+        <li><a href ="merch.html"  class="active">Merch</a></li>
+        <li><a href ="cart.html"  class="active">Cart</a></li>
+    </ul>
+    <hr>
+    <h3>Enter Your Details</h3>
+<form action="" id="myform">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname">
+    <label for="emailaddr">Email Address</label>
+    <input type="text" id="emailaddr" name="emailaddr">
+    <div>Message</div>
+    <textarea for="message" id="message" draggable="false"></textarea>
+    <div>Nationality</div>
+    <select name="Nationaliy" id="Nationality">
+        <option value="default">Select Country</option>
+        <option value="ng">Nigeria</option>
+        <option value="cr">Cameroon</option>
+        <option value="ngr">Niger</option>
+    </select>
+    <button id="btn1" type="submit" onclick="submitButton()">SUBMIT</button>
+    <script type="text/javascript" src = "script.js"></script>
+</form>
+</body>
+</html>

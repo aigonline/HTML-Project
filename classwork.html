@@ -1,0 +1,158 @@
+<!doctype html>
+<head>
+    <title>23B Class</title>
+    <style>
+       .header{
+           background-color:gray;
+           text-align: center;
+           padding:10px;
+       }
+
+       .nav{
+           overflow: hidden;
+           background-color: black;
+       }
+
+       .nav a {
+           float: left;
+           color: red;
+           text-decoration: none;
+           display: block;
+           padding: 15px;
+       }
+
+       .nav a:hover{
+           background-color: white;
+       }
+       .main{
+           height:500px;
+       }
+       .left{
+           float:left;
+           background-color: pink;
+           width:20%;
+           height: 100%;
+       }
+       .middle{
+           float: left;
+           background-color: purple;
+           width:60%;
+           height: 100%;
+       }
+       .right{
+           float: left;
+           background-color:pink;
+           width:20%;
+           height: 100%;
+       }
+
+       form{
+           background-color: grey;
+           width: 90%;
+           padding: 15px;
+           margin: 0 auto 0 auto;
+           display: grid;
+           margin-top: 10px;
+           border: 1px;
+           border-color: solid black;
+       }
+
+       input[type=text]{
+           width:95%;
+           padding: 10px;
+       }
+
+       input[type=password]{
+           width: 95%;
+           padding: 10px;
+       }
+
+       input[type=button]{
+           width: 50%;
+           background-color: green;
+           margin: auto;
+           padding: 20px;
+
+       }
+
+       .active{
+           background-color:blue;
+       }
+
+    </style>
+</head>
+<body>
+ <div class="header">
+     <h1>23B practice</h1>
+ </div>
+<div class="nav">
+    <a class="active" href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="">about us</a>
+    <a href="" style="float: right">contact us</a>
+</div>
+<div class="main">
+   <div class="left">hey</div>
+   <div class="middle">
+    <form name="myform">
+        <label for="firstName">First Name:</label>
+        <input id="firstName" type="text" name="fname" />
+        <br>
+        <label for="lastName">last Name:</label>
+        <input id="lastName" type="text" name="lname"/>
+        <br>
+        <label for="password">password</label>
+        <input id="password" type="password" name="p1"/>
+        <input id="check" type="checkbox" name="check" onclick="toggle()">Show password
+        <br>
+        <br>
+        <label for="cpassword">confirm password</label>
+        <input id="cpassword" type="password" name="p2"/>
+        <br>
+        <label for="dateofbirth"> Dob</label>
+        <input id="jb" type="date" name="dob">
+        <p>job description:</p>
+        <textarea for="message" id="message" draggable="false"></textarea>
+        <input id="cv" type="file"
+        <input type="button" value="Submit" onclick="display()">
+    </form>
+   </div>
+   <div class="right">hello</div>
+</div>
+
+<script>
+
+   function display(name1, name2) {
+       var pass1 = document.myform.p1.value;
+       var pass2 = document.myform.p2.value;
+       if(pass1!=pass2){
+           alert("passwords do not match")
+       }else {
+
+           // var a = document.myform.fname.value;
+           // var b = document.myform.lname.value;
+
+           var a = document.getElementById("firstName").value;
+           var b = document.getElementById("lastName").value;
+
+           alert("hello " + a + " " + b);
+       }
+   }
+
+   function toggle(){
+       var pass = document.getElementById("password");
+       if(pass.type=="password"){
+           pass.type="text";
+       }else{
+           pass.type="password";
+       }
+   }
+
+</script>
+
+</body>
+</html>
+
+
+
+
