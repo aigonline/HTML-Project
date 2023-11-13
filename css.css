@@ -60,3 +60,10 @@ ul   {
    
    a:active{ color: orangered;
             }
+@media screen and (min-width: 480px) {
+               /* CSS code for screens wider than 480px */
+             }
+             
+ @media screen and (max-width: 480px) {
+               /* CSS code for screens narrower than 480px */
+             }
